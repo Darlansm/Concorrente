@@ -34,6 +34,7 @@ public class CiclodeVidaThread implements Runnable {
 
                 synchronized (this) {
                     while (espera) {
+                        //if(espera){
                         wait();
 
                     }
