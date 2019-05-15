@@ -27,30 +27,30 @@ public class Implementacao3 {
 
             Thread.sleep(1000);
             thread1.suspend();
-            System.out.println("Suspendendo Thread1");
+            System.out.println("Suspendendo ******************** Thread1");
 
-            //Thread.sleep(1000);
+            Thread.sleep(1000);
 
             thread1.resume();
-            System.out.println("Retomando Thread1");
+            System.out.println("Retomando ************************Thread1");
 
             thread2.suspend();
-            System.out.println("Suspendendo Thread 2");
-            //Thread.sleep(1000);
+            System.out.println("Suspendendo ********************** Thread 2");
+           Thread.sleep(1000);
             thread2.resume();
-            System.out.println("Retomando Thread2");
+            System.out.println("Retomando ******************* Thread2");
         } catch (InterruptedException e) {
-            System.out.println("Thread interrompida");
+            System.out.println("Thread ************************* interrompida");
         }
 
         try {
             System.out.println("Esperando que Threads terminem");
             thread1.t.join();
             thread2.t.join();
-        } catch (InterruptedException e) {
-            System.out.println("Esperando que Threads terminem");
+       } catch (InterruptedException e) {
+            System.out.println("Esperando que Threads ******************terminem");
         }
-        System.out.println("Thread Executando");
+        System.out.println("Thread ***************** Executando");
     }
 
 }
